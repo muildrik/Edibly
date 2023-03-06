@@ -8,7 +8,7 @@ const RecipeList = () => {
     const [recipes, setRecipes] = useState([]);
   
     useEffect(() => {
-        axios.get("http://localhost:4000/Recipes")
+        axios.get("http://localhost:4000/recipes/recipes")
         .then(data => setRecipes(data.data))
         .catch((error) => {
             console.log(error);

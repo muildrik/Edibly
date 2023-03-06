@@ -2,7 +2,7 @@
 import React from "react";
 
 // Import Bootstrap
-import { Nav, Navbar, Container, Row, Col } from "react-bootstrap";
+import { Nav, Navbar, Container, Row, Col, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 
 // Import Custom CSS
@@ -16,30 +16,40 @@ import { Route, Routes, BrowserRouter as Router, Link } from "react-router-dom";
 import NewRecipe from "./components/recipeNew";
 import EditRecipe from "./components/recipeEdit";
 import RecipeList from "./components/recipeList";
+import Preferences from "./components/preferences";
 
 // App Component
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <div className="App">
         <header className="App-header">
             <Navbar bg="dark" variant="dark">
-              <Container>
-                <Navbar.Brand as={Link} to="/">Recipebook</Navbar.Brand>
-                <Navbar.Collapse>
-                  <Nav className="justify-content-end">
-                    <Nav>
-                      <Nav.Link as={Link} to={"/recipe-list"} className="nav-link">Recipe List</Nav.Link>
-                    </Nav>
-                    <Nav>
-                      <Nav.Link as={Link} to={"/update-recipe"} className="nav-link">Update Recipe</Nav.Link>
-                    </Nav>
-                    <Nav>
-                      <Nav.Link as={Link} to={"new-recipe"} className="nav-link">Add Recipe</Nav.Link>
-                    </Nav>
+                <Navbar.Brand as={Link} to="api/recipes/">Edibly</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
+                <Navbar.Collapse id="basic-navbar-nav">
+                  <Nav className="mr-auto">
+                    <Nav.Link as={Link} to={"/at-a-glance"} className="nav-link">At a Glance</Nav.Link>
+                    <Nav.Link as={Link} to={"/api/shopping/list"} className="nav-link">Shopping List</Nav.Link>
+                    <NavDropdown title="Shopping" id="basic-nav-dropdown">
+                      <NavDropdown.Item as={Link} to={"api/shopping/find-product"}>Find product</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to={"api/shopping/browse"}>Browse</NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item as={Link} to={"api/shopping/scan"}>Scan product</NavDropdown.Item>
+                    </NavDropdown>
+                    <NavDropdown title="Meal plan" id="basic-nav-dropdown">
+                      <NavDropdown.Item as={Link} to={"api/meal-plan/new-plan"}>New meal plan</NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item as={Link} to={"api/meal-plan/new-meal"}>New meal</NavDropdown.Item>
+                    </NavDropdown>
+                    <NavDropdown title="Recipes" id="basic-nav-dropdown">
+                      <NavDropdown.Item as={Link} to={"api/recipes"}>Recipes</NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item as={Link} to={"api/recipes/new-recipe"}>New recipe</NavDropdown.Item>
+                    </NavDropdown>
+                    <Nav.Link as={Link} to={"/api/preferences"} className="nav-link">Preferences</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
-              </Container>
             </Navbar>
         </header>
         
@@ -48,10 +58,11 @@ function App() {
             <Col md={12}>
               <div className="wrapper">
                 <Routes>
-                  <Route exact path="/" element={<NewRecipe />} />
-                  <Route path="/new-recipe" element={<NewRecipe />} />
-                  <Route path="/update-recipe/:id" element={<EditRecipe />} />
-                  <Route path="/recipe-list" element={<RecipeList />} />
+                  <Route path="api/recipes" element={<RecipeList />} />
+                  <Route path="api/recipes/new-recipe" element={<NewRecipe />} />
+                  {/* <Route path="/update-recipe/:id" element={<EditRecipe />} /> */}
+                  {/* <Route path="/recipe-list" element={<RecipeList />} /> */}
+                  <Route path="api/preferences" element={<Preferences />} />
                 </Routes>
               </div>
             </Col>

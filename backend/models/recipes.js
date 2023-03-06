@@ -9,4 +9,4 @@ let recipeSchema = new Schema({
     collection: 'Recipes'
 })
   
-module.exports = mongoose.model('Recipe', recipeSchema)
+module.exports = mongoose.model('Recipes', recipeSchema)

@@ -2,10 +2,11 @@ let express = require('express');
 let mongoose = require('mongoose');
 let cors = require('cors');
 let bodyParser = require('body-parser');
-let dbConfig = require('./database/db');
+let dbConfig = require('./database/database');
   
 // Express Route
-const recipeRoute = require('../backend/routes/recipe.route')
+const recipesRoute = require('./routes/recipes.route')
+const preferencesRoute = require('./routes/preferences.route')
   
 // Configure mongoDB Database
 // mongoose.set('useNewUrlParser', true);
@@ -30,9 +31,10 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cors());
 
-// RECIPES ROUTES
-app.use('/recipes', recipeRoute)
-  
+// ROUTES
+require('./add_routes')(app).load()
+// app.use('/recipes', recipesRoute)
+// app.use('/preferences', preferencesRoute)
   
 // PORT
 const port = process.env.PORT || 4000;
