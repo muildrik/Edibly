@@ -1,0 +1,619 @@
+{
+    "recipe1" : {
+        "id": "1",
+        "name": "Shepherd's Pie", 
+        "type": "meat",
+        "img": "images/shepherdsPie.jpg",
+        "imgTag" : "Shepherd's Pie",
+        "cooktime": "One hour",
+        "servings": 4,
+        "ingredients": [
+        {
+            "name" : "margarine",
+            "type": "Butter",
+            "amount" : "50 gr/2 oz"
+        }, {
+            "name" : "white (large)",
+            "type": "Onion",
+            "amount": "1"
+        }, {
+            "name" : "all-purpose (plain)",
+            "type": "Flour",
+            "amount": "25 gr/1 oz"
+        }, {
+            "name" : "beef or chicken",
+            "type": "Stock",
+            "amount": "275 ml/0.5 pt"
+        }, {
+            "name" : "minced",
+            "type": "Beef",
+            "amount": "450 gr/1 lb"
+        }, {
+            "name" : "purée",
+            "type": "Tomato",
+            "amount": "15 ml/1 tbsp"
+        }, {
+            "name" : "",
+            "type": "Potatoes",
+            "amount": "450 gr/1 lb"
+        }, {
+            "name" : "semi-skimmed",
+            "type": "Milk",
+            "amount": "30 ml/2 tbsp"
+        }
+        ]
+    },
+    "recipe2" : {
+    "id" : "2",
+    "name" : "Chili con Carne",
+    "type": "meat",
+    "img" : "images/chiliConCarne.jpg",
+    "imgTag" : "Chili con Carne",
+    "cooktime" : "Two hours",
+    "servings" : 4,
+    "ingredients" : [
+      {
+        "name" : "black",
+        "type": "Beans",
+        "amount": "432 gr/1can"
+      }, {
+        "name" : "kidney (red)",
+        "type": "Beans",
+        "amount": "15 oz/1can"
+      }, {
+        "name" : "minced",
+        "type": "Beef",
+        "amount": "750 gr/1.5lb"
+      }, {
+        "name" : "white (large)",
+        "type": "Onion",
+        "amount": "1"
+      }, {
+        "name" : "clove",
+        "type": "Garlic",
+        "amount": "1"
+      }, {
+        "name": "cumin (powder)",
+        "type": "Spice",
+        "amount": "3 tsp"
+      }, {
+        "name": "chili (powder)",
+        "type": "Spice",
+        "amount": "0.25-0.5 tsp"
+      }, {
+        "name" : "oregano",
+        "type": "Spice",
+        "amount": "0.5 tsp"
+      }, {
+        "name" : "sauce",
+        "type": "Tomatoes",
+        "amount": "396 gr/14 oz can"
+      }, {
+        "name" : "purée",
+        "type": "Tomatoes",
+        "amount": "1 tbsp"
+      }, {
+        "name" : "red or yellow",
+        "type": "Bell pepper",
+        "amount": "1"
+      }
+    ]
+},
+"recipe3" : {
+    "id" : "3",
+    "name": "Toad in the hole",
+    "type": "meat",
+    "img": "images/toadInTheHole.jpg",
+    "imgTag" : "Toad in the Hole",
+    "cooktime": "Two hours",
+    "servings": 4,
+    "ingredients": [
+      {
+        "name" : "",
+        "type": "Sausages",
+        "amount": "8"
+      }, {
+        "name" : "",
+        "type": "Fat",
+        "amount": "25 gr"
+      }, {
+        "name" : "all-purpose (plain)",
+        "type": "Flour",
+        "amount": "100 gr/4 oz"
+      }, {
+        "name" : "salt",
+        "type": "Spice",
+        "amount": "0.25 tsp"
+      }, {
+        "name" : "beaten",
+        "type": "Eggs",
+        "amount": "2"
+      }, {
+        "name" : "semi-skimmed",
+        "type": "Milk",
+        "amount": "300 ml/0.5 pt"
+      }, {
+        "name" : "herbs (dried, mixed)",
+        "type": "Spice",
+        "amount": "1 tsp"
+      }
+    ]
+},
+"recipe4" : {
+    "id": "4",
+    "name": "Spicy sausage ragout",
+    "type": "meat",
+    "img": "images/spicySausageRagout.jpg",
+    "imgTag" : "Spicy sausage ragout",
+    "cooktime": "Two hours",
+    "servings": 4,
+    "ingredients": [
+      {
+        "name" : "",
+        "type": "Sausages",
+        "amount": "1 lb"
+      }, {
+        "name" : "olive",
+        "type": "Oil",
+        "amount": "1 tbsp"
+      }, {
+        "name" : "white",
+        "type": "Onion",
+        "amount": "1"
+      }, {
+        "name" : "red",
+        "type": "Bell pepper",
+        "amount": "1"
+      }, {
+        "name" : "cloves",
+        "type": "Garlic",
+        "amount": "2"
+      }, {
+        "name" : "paprika",
+        "type": "Spice",
+        "amount": "2 tsp"
+      }, {
+        "name" : "oregano",
+        "type": "Spice",
+        "amount": "1 tbsp"
+      }, {
+        "name" : "chopped",
+        "type": "Tomatoes",
+        "amount": "397 gr"
+      }, {
+        "name" : "chicken",
+        "type": "Stock",
+        "amount": "284 ml"
+      }, {
+        "name" : "dark brown",
+        "type": "Sugar",
+        "amount": "1 tsp"
+      }, {
+        "name" : "fusilli",
+        "type": "Pasta",
+        "amount": "300 gr"
+      }
+    ]
+},
+"recipe5" : {
+    "id": "5",
+    "name": "Easy oven fajitas",
+    "type": "meat",
+    "img": "images/easyOvenFajitas.jpg",
+    "imgTag" : "Easy oven fajitas",
+    "cooktime": "One hour",
+    "servings": 6,
+    "ingredients": [
+      {
+        "name" : "white",
+        "type": "Onion",
+        "amount": "2"
+      }, {
+        "name" : "green",
+        "type": "Bell pepper",
+        "amount": "2"
+      }, {
+        "name" : "red",
+        "type": "Bell pepper",
+        "amount": "1"
+      }, {
+        "name" : "breast",
+        "type": "Chicken",
+        "amount": "1 lb"
+      }, {
+        "name" : "vegetable",
+        "type": "Oil",
+        "amount": "2 tbsp"
+      },
+      {
+        "name" : "medium",
+        "type": "Lime",
+        "amount": "1"
+      }, {
+        "name" : "chili (powder)",
+        "type": "Spice",
+        "amount": "1 tbsp"
+      }, {
+        "name" : "paprika (powder)",
+        "type": "Spice",
+        "amount": "0.5 tbsp"
+      }, {
+        "name" : "onion (powder)",
+        "type": "Spice",
+        "amount": "0.5 tsp"
+      }, {
+        "name" : "garlic (powder)",
+        "type": "Spice",
+        "amount": "0.25 tsp"
+      }, {
+        "name" : "cumin (powder)",
+        "type": "Spice",
+        "amount": "0.25 tsp"
+      }, {
+        "name" : "cayenne (powder)",
+        "type": "Spice",
+        "amount": "0.125 tsp"
+      }, {
+        "name" : "salt",
+        "type": "Spice",
+        "amount": "0.5 tsp"
+      }, {
+        "name" : "corn starch",
+        "type": "Spice",
+        "amount": "0.5 tbsp"
+      }, {
+        "name" : "whole wheat",
+        "type": "Tortillas",
+        "amount": "8"
+      }, {
+        "name" : "full fat",
+        "type": "Sour cream",
+        "amount": "1 tub"
+      }, {
+        "name" : "cilantro/coriander (fresh)",
+        "type": "Spice",
+        "amount": "1 bushel"
+      }
+    ]
+},
+"recipe6" : {
+    "id": "6",
+    "name": "One pot chili pasta",
+    "type": "vegetarian",
+    "img": "images/onePotChiliPasta.jpg",
+    "imgTag" : "One pot chili pasta",
+    "cooktime": "30 minutes",
+    "servings": 4,
+    "ingredients": [
+      {
+        "name" : "white",
+        "type": "Onion",
+        "amount": "1"
+      }, {
+        "name" : "cloves",
+        "type": "Garlic",
+        "amount": "2"
+      }, {
+        "name" : "minced",
+        "type": "Beef",
+        "amount": "0.5 lb"
+      }, {
+        "name" : "all-purpose (plain)",
+        "type": "Flour",
+        "amount": "2 tbsp"
+      }, {
+        "name" : "chili (powder)",
+        "type": "Spice",
+        "amount": "2 tbsp"
+      }, {
+        "name" : "sauce",
+        "type": "Tomato",
+        "amount": "15 oz/1 can"
+      }, {
+        "name" : "diced",
+        "type": "Tomatoes",
+        "amount": "15 oz/1 can"
+      }, {
+        "name" : "black",
+        "type": "Beans",
+        "amount": "15 oz/1 can"
+      }, {
+        "name" : "kidney (red)",
+        "type": "Beans",
+        "amount": "15 oz/1 can"
+      }, {
+        "name" : "",
+        "type": "Corn",
+        "amount": "1 can"
+      }, {
+        "name" : "macaroni",
+        "type": "Pasta",
+        "amount": "2 cups"
+      }, {
+        "name" : "beef or chicken",
+        "type": "Broth",
+        "amount": "2 cups"
+      }, {
+        "name" : "mozarella (shredded)",
+        "type": "Cheese",
+        "amount": "1 cup"
+      }
+    ]
+},
+"recipe7" : {
+    "id": "7",
+    "name": "Mac'n cheese",
+    "type": "vegetarian",
+    "img": "images/macAndCheese.jpg",
+    "imgTag" : "Macaroni cheese",
+    "cooktime": "15 minutes",
+    "servings": 4,
+    "ingredients": [
+      {
+        "name" : "macaroni",
+        "type": "Pasta",
+        "amount": "175 gr"
+      }, {
+        "name" : "margarine",
+        "type": "Butter",
+        "amount": "40 gr/1.5 oz"
+      }, {
+        "name" : "all-purpose (plain)",
+        "type": "Flour",
+        "amount": "40 gr/1.5 oz"
+      }, {
+        "name" : "semi-skimmed",
+        "type": "Milk",
+        "amount": "575 ml/1 pt"
+      }, {
+        "name" : "smoked",
+        "type": "Bacon",
+        "amount": "125 gr/4 oz"
+      }, {
+        "name" : "sweet",
+        "type": "Corn",
+        "amount": "210 gr"
+      }, {
+        "name" : "cheddar",
+        "type": "Cheese",
+        "amount": "125 gr/4 oz"
+      }, {
+        "name" : "mustard (powder)",
+        "type": "Spice",
+        "amount": "pinch"
+      }, {
+        "name" : "salt",
+        "type": "Spice",
+        "amount": "to taste"
+      }, {
+        "name" : "pepper",
+        "type": "Spice",
+        "amount": "to taste"
+      }, {
+        "name" : "",
+        "type": "Breadcrumbs",
+        "amount": "25 gr/1 oz"
+      }
+    ]
+},
+"recipe8" : {
+    "id": "8",
+    "name": "Creamy tomato and pepper pasta",
+    "type": "vegetarian",
+    "img": "images/creamyTomatoAndPepperPasta.jpg",
+    "imgTag" : "Creamy tomato and pepper pasta",
+    "cooktime": "1.5 hours",
+    "servings": 8,
+    "ingredients": [
+      {
+        "name" : "ripe",
+        "type": "Tomatoes",
+        "amount": "900 gr/4 lb"
+      }, {
+        "name" : "red",
+        "type": "Bell pepper",
+        "amount": "1"
+      }, {
+        "name" : "cloves",
+        "type": "Garlic",
+        "amount": "2"
+      }, {
+        "name" : "penne",
+        "type": "Pasta",
+        "amount": "350 gr/ 12 oz"
+      }, {
+        "name" : "",
+        "type": "Crème fraîche",
+        "amount": "4 tbsp"
+      }, {
+        "name" : "red",
+        "type": "Onion",
+        "amount": "1"
+      }
+    ]
+},
+"recipe9" : {
+    "id": "9",
+    "name": "Spaghetti with Tomato and Brie",
+    "type": "vegetarian",
+    "img": "images/spaghettiWithTomatoAndBrie.jpg",
+    "imgTag" : "Spaghetti with Tomato and Brie",
+    "cooktime": "30 minutes",
+    "servings": 2,
+    "ingredients": [
+      {
+        "name" : "spaghetti",
+        "type": "Pasta",
+        "amount": "4 oz"
+      }, {
+        "name" : "",
+        "type": "Courgette/zucchini",
+        "amount": "1"
+      }, {
+        "name" : "clove",
+        "type": "Garlic",
+        "amount": "1"
+      }, {
+        "name" : "",
+        "type": "Lemon",
+        "amount": "1"
+      }, {
+        "name" : "ripe",
+        "type": "Tomatoes",
+        "amount": "2"
+      }, {
+        "name" : "brie",
+        "type": "Cheese",
+        "amount": "8 oz"
+      }
+    ]
+},
+"recipe10" : {
+    "id": "10",
+    "name": "Spinach Quiche",
+    "type": "vegetarian",
+    "img": "images/spinachQuiche.jpg",
+    "imgTag" : "Spinach Quiche",
+    "cooktime": "Two hours",
+    "servings": 4,
+    "ingredients": [
+      {
+        "name" : "cream",
+        "type": "Cheese",
+        "amount": "3 oz"
+      }, {
+        "name" : "semi-skimmed",
+        "type": "Milk",
+        "amount": "1/3 cup"
+      }, {
+        "name" : "",
+        "type": "Eggs",
+        "amount": "3"
+      }, {
+        "name" : "frozen and chopped",
+        "type": "Spinach",
+        "amount": "10 oz"
+      }, {
+        "name" : "cheddar",
+        "type": "Cheese",
+        "amount": "0.5 cup"
+      }, {
+        "name" : "parmesan",
+        "type": "Cheese",
+        "amount": "0.25 cup"
+      }, {
+        "name" : "",
+        "type": "Spring onion",
+        "amount": "4-6"
+      }, {
+        "name" : "salt",
+        "type": "Spice",
+        "amount": "0.25 tsp"
+      }, {
+        "name" : "pepper",
+        "type": "Spice",
+        "amount": "0.25 tsp"
+      }, {
+        "name" : "shortcrust",
+        "type": "Pastry",
+        "amount": "1"
+      }
+    ]
+},
+"recipe11" : {
+    "id": "11",
+    "name": "Cashew Stir Fry",
+    "type": "vegetarian",
+    "img": "images/cashewStirFry.jpg",
+    "imgTag" : "Cashew Stir Fry",
+    "cooktime": "30 minutes",
+    "servings": 4,
+    "ingredients": [
+      {
+        "name" : "unsalted",
+        "type": "Cashews",
+        "amount": "1 handful"
+      }, {
+        "name" : "red",
+        "type": "Bell pepper",
+        "amount": "1"
+      }, {
+        "name" : "green and raw",
+        "type": "Cabbage",
+        "amount": "2 handfuls"
+      }, {
+        "name" : "frozen",
+        "type": "Green peas",
+        "amount": "2 handfuls"
+      }, {
+        "name" : "",
+        "type": "Carrots",
+        "amount": "2"
+      }, {
+        "name" : "red",
+        "type": "Chili",
+        "amount": "1"
+      }, {
+        "name" : "cloves",
+        "type": "Garlic",
+        "amount": "2"
+      }, {
+        "name" : "root",
+        "type": "Ginger",
+        "amount": "5 cm"
+      }, {
+        "name" : "",
+        "type": "Soy sauce",
+        "amount": "4 tbsp"
+      }, {
+        "name" : "rice wine",
+        "type": "Vinegar",
+        "amount": "1 tbsp"
+      }, {
+        "name" : "egg",
+        "type": "Noodles",
+        "amount": "400 gr"
+      }
+    ]
+},
+"recipe12" : {
+    "id": "12",
+    "name": "Pancakes",
+    "type": "vegetarian",
+    "img": "images/pancakes.jpg",
+    "imgTag" : "Pancakes",
+    "cooktime": "30 minutes",
+    "servings": 4,
+    "ingredients": [
+      {
+        "name" : "",
+        "type": "Eggs",
+        "amount": "2"
+      }, {
+        "name" : "all-purpose (plain)",
+        "type": "Flour",
+        "amount": "2 cups"
+      }, {
+        "name" : "baking soda",
+        "type": "Condiment",
+        "amount": "4 tbsp"
+      }, {
+        "name" : "salt",
+        "type": "Spice",
+        "amount": "0.25 tsp"
+      }, {
+        "name" : "white",
+        "type": "Sugar",
+        "amount": "1 tbsp"
+      }, {
+        "name" : "vegetable",
+        "type": "Oil",
+        "amount": "0.5 cup"
+      }, {
+        "name" : "semi-skimmed",
+        "type": "Milk",
+        "amount": "1.75 cups"
+      }
+    ]
+  }
+}
