@@ -6,7 +6,7 @@ import axios from "axios";
 import RecipeForm from "./RecipeForm";
   
 // EditRecipe Component
-const EditRecipe = (props) => {
+const RecipeEdit = (props) => {
   
     const [formValues, setFormValues] = useState({
         title: "",
@@ -46,4 +46,4 @@ const EditRecipe = (props) => {
 };
 
 // Export EditRecipe Component
-export default EditRecipe;
+export default RecipeEdit;

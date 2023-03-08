@@ -13,10 +13,11 @@ import { Route, Routes, BrowserRouter as Router, Link } from "react-router-dom";
 
 // Import custom Components
 // import AddIngredient from "./Components/ingredientNew";
-import NewRecipe from "./components/recipeNew";
-import EditRecipe from "./components/recipeEdit";
+import RecipeNew from "./components/recipeNew";
+import RecipeEdit from "./components/recipeEdit";
 import RecipeList from "./components/recipeList";
 import Preferences from "./components/preferences";
+import Auth from "./components/auth";
 
 // App Component
 function App() {
@@ -43,10 +44,11 @@ function App() {
                       <NavDropdown.Item as={Link} to={"api/meal-plan/new-meal"}>New meal</NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title="Recipes" id="basic-nav-dropdown">
-                      <NavDropdown.Item as={Link} to={"api/recipes"}>Recipes</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to={"api/recipes/list"}>Recipes</NavDropdown.Item>
                       <NavDropdown.Divider />
-                      <NavDropdown.Item as={Link} to={"api/recipes/new-recipe"}>New recipe</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to={"api/recipes/new"}>New recipe</NavDropdown.Item>
                     </NavDropdown>
+                    <Nav.Link as={Link} to={"/api/auth/signin"} className="nav-link">Sign in</Nav.Link>
                     <Nav.Link as={Link} to={"/api/preferences"} className="nav-link">Preferences</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
@@ -58,15 +60,21 @@ function App() {
             <Col md={12}>
               <div className="wrapper">
                 <Routes>
-                  <Route path="api/recipes" element={<RecipeList />} />
-                  <Route path="api/recipes/new-recipe" element={<NewRecipe />} />
-                  {/* <Route path="/update-recipe/:id" element={<EditRecipe />} /> */}
+                  <Route path="api/recipes/list" element={<RecipeList />} />
+                  <Route path="api/recipes/new" element={<RecipeNew />} />
+                  <Route path="api/recipes/update:id" element={<RecipeEdit />} />
                   {/* <Route path="/recipe-list" element={<RecipeList />} /> */}
                   <Route path="api/preferences" element={<Preferences />} />
+                  <Route path="api/auth/signin" element={<Auth />} />
+                  <Route path="api/auth/signup" element={<Auth />} />
                 </Routes>
               </div>
             </Col>
           </Row>
+          <Routes>
+            <Route path="api/auth/signin" element={<Auth />} />
+            <Route path="api/auth/signup" element={<Auth />} />
+          </Routes>
         </Container>
       </div>
     </Router>

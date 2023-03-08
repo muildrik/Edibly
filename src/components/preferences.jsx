@@ -3,16 +3,15 @@
 // Import Modules
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-// import IngredientForm from "./IngredientForm";
+import PreferencesForm from "./preferencesForm";
   
 // CreateIngredient Component
 const Preferences = () => {
-  const [formValues, setFormValues] = 
-    useState({ name: '', email: '' })
+  const [formValues, setFormValues] = useState({ name: '', email: '' })
   
     // onSubmit handler
   const onSubmit = preferences => {
-    axios.post('http://localhost:4000/api/preferences-update', preferences)
+    axios.post('http://localhost:4000/api/preferences/update', preferences)
       .then(res => {
         if (res.status === 200)
           alert('Preferences successfully updated')
@@ -24,8 +23,10 @@ const Preferences = () => {
     
   // Return ingredient form
   return(
-    <div>Preferences</div>
-    // <IngredientForm initialValues={formValues} onSubmit={onSubmit} enableReinitialize>Add Ingredient</IngredientForm>
+    <div>
+        <h1>Preferences</h1>
+        <PreferencesForm initialValues={formValues} onSubmit={onSubmit} enableReinitialize>Save changes</PreferencesForm>
+    </div>
   )
 }
   

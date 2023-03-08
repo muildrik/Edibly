@@ -8,7 +8,8 @@ const RecipeList = () => {
     const [recipes, setRecipes] = useState([]);
   
     useEffect(() => {
-        axios.get("http://localhost:4000/recipes/recipes")
+        console.log(0)
+        axios.get("http://localhost:4000/api/recipes/list")
         .then(data => setRecipes(data.data))
         .catch((error) => {
             console.log(error);
